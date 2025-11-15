@@ -1,97 +1,49 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "Shield"
+description: "Decentralized Trustless File and Message Sharing"
 ---
 
-## Setting up
+# Welcome to Shield
 
-Get your documentation site up and running in minutes.
+Shield is a decentralized application for sharing confidential files and messages with unparalleled security and privacy. Leveraging blockchain technology and decentralized storage, Shield ensures that your private data is only ever seen by the intended recipient.
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
+## What Makes Shield Different?
+
+Unlike traditional platforms that rely on a central server, Shield is **trustless**. Access rules are enforced by an on-chain smart contract on Base Mainnet, meaning not even the Shield platform itself can access or censor your data.
+
+<CardGroup cols={2}>
+  <Card title="Trustless Security" icon="shield" href="/essentials/security">
+    Access rules enforced by immutable smart contracts on Base Mainnet
+  </Card>
+  <Card title="End-to-End Encryption" icon="lock" href="/essentials/encryption">
+    AES-256 encryption happens on your device before upload
+  </Card>
+  <Card title="Decentralized Storage" icon="cloud" href="/essentials/architecture">
+    Files stored on IPFS via Pinata for censorship resistance
+  </Card>
+  <Card title="Ephemeral Access" icon="clock" href="/essentials/access-control">
+    Links can expire and self-destruct after failed attempts
+  </Card>
+</CardGroup>
+
+## Key Features
+
+- **On-Chain Access Control**: Smart contract enforces who can access your data
+- **Client-Side Encryption**: Your files are encrypted in the browser before upload
+- **Zero-Knowledge Backend**: The server never sees your decryption keys
+- **Self-Destructing Links**: Configure expiration and max verification attempts
+- **SIWE Authentication**: Sign-In with Ethereum for secure identity verification
+
+## Quick Start
+
+<Card title="Get Started" icon="rocket" href="/quickstart">
+  Learn how to share your first secure file or message in minutes
 </Card>
 
-## Make it yours
+## Built On
 
-Design a docs site that looks great and empowers your users.
-
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
-  </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
-
-## Create beautiful pages
-
-Everything you need to create world-class documentation.
-
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
-
-## Need inspiration?
-
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+- **Blockchain**: Base Mainnet (Ethereum L2)
+- **Storage**: IPFS via Pinata
+- **Authentication**: SIWE (Sign-In with Ethereum)
+- **Frontend**: Next.js, React, TypeScript
+- **Smart Contracts**: Solidity, Hardhat
